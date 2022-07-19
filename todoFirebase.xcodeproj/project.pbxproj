@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		489B9FE52886BCD9004EB0F0 /* todoFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B9FE42886BCD9004EB0F0 /* todoFirebaseApp.swift */; };
-		489B9FE72886BCD9004EB0F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B9FE62886BCD9004EB0F0 /* ContentView.swift */; };
+		489B9FE72886BCD9004EB0F0 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B9FE62886BCD9004EB0F0 /* TaskListView.swift */; };
 		489B9FE92886BCDB004EB0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489B9FE82886BCDB004EB0F0 /* Assets.xcassets */; };
 		489B9FEC2886BCDB004EB0F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489B9FEB2886BCDB004EB0F0 /* Preview Assets.xcassets */; };
+		489B9FF42886BD33004EB0F0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B9FF32886BD33004EB0F0 /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		489B9FE12886BCD9004EB0F0 /* todoFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489B9FE42886BCD9004EB0F0 /* todoFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoFirebaseApp.swift; sourceTree = "<group>"; };
-		489B9FE62886BCD9004EB0F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		489B9FE62886BCD9004EB0F0 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		489B9FE82886BCDB004EB0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		489B9FEB2886BCDB004EB0F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		489B9FF32886BD33004EB0F0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,8 @@
 		489B9FE32886BCD9004EB0F0 /* todoFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				489B9FE42886BCD9004EB0F0 /* todoFirebaseApp.swift */,
-				489B9FE62886BCD9004EB0F0 /* ContentView.swift */,
+				489B9FF92886BE39004EB0F0 /* App */,
+				489B9FF72886BE1F004EB0F0 /* Modules */,
 				489B9FE82886BCDB004EB0F0 /* Assets.xcassets */,
 				489B9FEA2886BCDB004EB0F0 /* Preview Content */,
 			);
@@ -65,6 +67,55 @@
 				489B9FEB2886BCDB004EB0F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		489B9FF22886BD2B004EB0F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				489B9FF32886BD33004EB0F0 /* Tasks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		489B9FF52886BE12004EB0F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				489B9FE62886BCD9004EB0F0 /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		489B9FF62886BE19004EB0F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		489B9FF72886BE1F004EB0F0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				489B9FF82886BE27004EB0F0 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		489B9FF82886BE27004EB0F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				489B9FF22886BD2B004EB0F0 /* Model */,
+				489B9FF62886BE19004EB0F0 /* ViewModel */,
+				489B9FF52886BE12004EB0F0 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		489B9FF92886BE39004EB0F0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				489B9FE42886BCD9004EB0F0 /* todoFirebaseApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				489B9FE72886BCD9004EB0F0 /* ContentView.swift in Sources */,
+				489B9FE72886BCD9004EB0F0 /* TaskListView.swift in Sources */,
+				489B9FF42886BD33004EB0F0 /* Tasks.swift in Sources */,
 				489B9FE52886BCD9004EB0F0 /* todoFirebaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
